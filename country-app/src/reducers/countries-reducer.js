@@ -1,12 +1,12 @@
 import { GET_COUNTRIES } from '../actions/actions-countries';
 import countriesData from '../data/countries.json';
 
-const initialState = [];
+const initialState = []; //generujemy pustą tablicę
 
 const countriesReducer = function (state = initialState, action) {
     switch (action.type) {
         case GET_COUNTRIES:
-            return countriesData;
+            return countriesData; //to z importuczyli cała ta tablica
     }
 
     return state;
