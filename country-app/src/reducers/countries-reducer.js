@@ -7,9 +7,10 @@ const countriesReducer = function (state = initialState, action) {
     switch (action.type) {
         case GET_COUNTRIES:
             return countriesData; //to z importuczyli cała ta tablica
+        default:
+            return state;
     }
-
-    return state;
+    // return state;
 };
 
 export default countriesReducer;

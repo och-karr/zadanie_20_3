@@ -3,7 +3,6 @@ import { render } from 'react-dom';
 import { Router, hashHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import store from './store';
-import Navigation from './presentational/navigation.component';
 import {getCountries} from './actions/actions-countries';
 import routes from './routes';
 import DevTools from './DevTools';
