@@ -5,14 +5,14 @@ import { Provider } from 'react-redux';
 import store from './store';
 import {getCountries} from './actions/actions-countries';
 import routes from './routes';
-import DevTools from './DevTools';
+// import DevTools from './DevTools';
 import './country.css';
 
 render(
     <Provider store={store}>
         <div>
             <Router history={hashHistory} routes={routes}/>
-            <DevTools />
+            {/* <DevTools /> */}
         </div>
     </Provider>,
     document.getElementById('root')
